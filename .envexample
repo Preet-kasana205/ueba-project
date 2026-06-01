@@ -1,0 +1,3 @@
+DATABASE_URL=postgresql://postgres:yourpassword@localhost:5432/ueba
+SECRET_KEY=" "
+ENVIRONMENT=development
