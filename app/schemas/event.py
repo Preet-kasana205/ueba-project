@@ -30,5 +30,6 @@ class BatchIngestRequest(BaseModel):
 class BatchIngestResponse(BaseModel):
     batch_id: str
     received: int
+    duplicate: int
     failed: int
     message: str

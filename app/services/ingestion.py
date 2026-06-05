@@ -1,26 +1,34 @@
 import hashlib
 import json
 import uuid
-from datetime import datetime, timezone
 from sqlalchemy.orm import Session
 from app.models.event import RawEvent
 from app.schemas.event import RawEventIn
+
 
 def compute_checksum(payload: dict) -> str:
     payload_bytes = json.dumps(payload, sort_keys=True).encode("utf-8")
     return hashlib.sha256(payload_bytes).hexdigest()
 
-def ingest_batch(
-    events: list[RawEventIn],
-    db: Session
-) -> dict:
+
+def ingest_batch(events: list[RawEventIn], db: Session) -> dict:
     batch_id = str(uuid.uuid4())
     received = 0
+    duplicate = 0
     failed = 0
 
     for event_in in events:
         try:
             checksum = compute_checksum(event_in.payload)
+
+            # Check for duplicate
+            exists = db.query(RawEvent).filter(
+                RawEvent.checksum == checksum
+            ).first()
+
+            if exists:
+                duplicate += 1
+                continue
 
             raw_event = RawEvent(
                 source_type=event_in.source_type,
@@ -41,6 +49,7 @@ def ingest_batch(
     return {
         "batch_id": batch_id,
         "received": received,
+        "duplicate": duplicate,
         "failed": failed,
-        "message": f"Batch ingestion complete. {received} accepted, {failed} failed."
+        "message": f"Batch complete. {received} stored, {duplicate} duplicate, {failed} failed."
     }
