@@ -1,24 +1,32 @@
 # UEBA Platform - Progress Log
 
 ## Stack
-- FastAPI, PostgreSQL, SQLAlchemy, Alembic, uv
+FastAPI, PostgreSQL, SQLAlchemy, Alembic, uv, Scikit-learn, Pandas, 
+Plotly, Streamlit, Docker
 
 ## Completed
-- Project structure created
-- Database models: User, RawEvent, NormalizedEvent
-- Alembic migrations running
-- .env setup with credentials fixed
-- Git initialised with .gitignore
+- Project scaffolding and folder structure
+- PostgreSQL database and Alembic migrations
+- Models: User, RawEvent, NormalizedEvent
+- Central config with pydantic-settings
+- Batch ingestion endpoint with checksum and idempotency
+- Database index on checksum
+- Normalisation pipeline for auth and file_access logs
+- .gitignore, .env.example, Git initialised
 
 ## In Progress
-- Log ingestion endpoint
-
+- normalisation concept complete inderstanding 
 ## Next
-- Normalisation pipeline
-- Baseline computation
+- Sample log generator
+- User management endpoints
+- Baseline computation engine
+- Rule-based detection
 
-## Key Decisions Made
-- Raw events are immutable, checksum verified
-- Alembic for all schema changes, never create_all
-- Pydantic schemas separate from SQLAlchemy models
-- Config centralised in app/core/config.py
+## Key Files
+- app/core/config.py — central settings
+- app/db/session.py — database session and Base
+- app/models/ — SQLAlchemy models
+- app/schemas/ — Pydantic schemas
+- app/services/ingestion.py — batch ingestion logic
+- app/services/normalization.py — normalisation pipeline
+- app/api/v1/ingest.py — ingestion routes
