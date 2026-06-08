@@ -1,7 +1,16 @@
 from datetime import datetime, timezone
 from sqlalchemy.orm import Session
 from app.models.event import RawEvent, NormalizedEvent
+from app.models.user import User
 
+
+def resolve_user_id(username: str, db: Session) -> str | None:
+    if not username:
+        return None
+    user = db.query(User).filter(
+        User.username == username
+    ).first()
+    return user.id if user else None
 
 def parse_timestamp(value: str) -> datetime:
     try:
@@ -80,7 +89,6 @@ def normalize_raw_event(raw_event: RawEvent) -> dict | None:
 
 
 def run_normalization(db: Session) -> dict:
-    # Find raw events that have not been normalized yet
     already_normalized = db.query(
         NormalizedEvent.raw_event_id
     ).subquery()
@@ -99,8 +107,16 @@ def run_normalization(db: Session) -> dict:
                 failed += 1
                 continue
 
+            # Resolve username to user_id
+            username = (
+                normalized_fields.get("metadata", {}).get("username")
+                or normalized_fields.get("metadata", {}).get("user")
+            )
+            user_id = resolve_user_id(username, db)
+
             normalized = NormalizedEvent(
                 raw_event_id=raw_event.id,
+                user_id=user_id,
                 **normalized_fields
             )
             db.add(normalized)
@@ -112,7 +128,4 @@ def run_normalization(db: Session) -> dict:
 
     db.commit()
 
-    return {
-        "processed": processed,
-        "failed": failed
-    }
+    return {"processed": processed, "failed": failed}
