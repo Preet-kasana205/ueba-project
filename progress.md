@@ -1,32 +1,43 @@
 # UEBA Platform - Progress Log
 
 ## Stack
-FastAPI, PostgreSQL, SQLAlchemy, Alembic, uv, Scikit-learn, Pandas, 
-Plotly, Streamlit, Docker
+FastAPI, PostgreSQL, SQLAlchemy, Alembic, APScheduler, uv
+Path: C:\Users\Lenovo\ueba-project
+GitHub: Preet-kasana205/ueba-project
 
 ## Completed
-- Project scaffolding and folder structure
-- PostgreSQL database and Alembic migrations
-- Models: User, RawEvent, NormalizedEvent
-- Central config with pydantic-settings
-- Batch ingestion endpoint with checksum and idempotency
-- Database index on checksum
-- Normalisation pipeline for auth and file_access logs
-- .gitignore, .env.example, Git initialised
-
-## In Progress
-- normalisation concept complete inderstanding 
-## Next
-- Sample log generator
+- Project structure and folder layout
+- Database models: User, RawEvent, NormalizedEvent, 
+  UserDevice, Baseline
+- Alembic migrations running
+- Log ingestion with SHA-256 checksum + idempotency
+- Normalisation pipeline with dispatch table pattern
+- Auto-normalisation via APScheduler every 60 seconds
 - User management endpoints
-- Baseline computation engine
-- Rule-based detection
+- User-to-event linking during normalisation
+- Baseline computation: login_hours, known_devices, data_volume
+- Sample data generator (30 days normal + anomaly scenario)
+- Sample data loader script
 
-## Key Files
-- app/core/config.py — central settings
-- app/db/session.py — database session and Base
-- app/models/ — SQLAlchemy models
-- app/schemas/ — Pydantic schemas
-- app/services/ingestion.py — batch ingestion logic
-- app/services/normalization.py — normalisation pipeline
-- app/api/v1/ingest.py — ingestion routes
+## Hackathon Context
+- 10 day deadline
+- Need: prototype demo link + workflow diagram
+- Story scenario: john.smith 2am login, unknown device, 
+  50MB download
+
+## Next To Build
+1. Detection rules (new device, unusual login time, 
+   data volume spike)
+2. Risk scoring engine
+3. Alert generation
+4. Streamlit dashboard
+5. Workflow diagram
+6. Docker Compose
+
+## Key Decisions Made
+- Raw events immutable, checksum verified
+- Subquery for idempotent normalisation
+- Dispatch table pattern for normalizers (Open/Closed)
+- Baselines stored as JSONB parameters, old ones kept 
+  with is_current=False
+- Corrupted timestamps rejected, not silently substituted
