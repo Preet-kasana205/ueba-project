@@ -1,4 +1,4 @@
-from sqlalchemy import String, DateTime, Integer
+from sqlalchemy import String, DateTime, Integer, Boolean
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column
 from datetime import datetime, timezone
@@ -22,6 +22,5 @@ class Baseline(Base):
     window_days: Mapped[int] = mapped_column(Integer, default=30)
     parameters: Mapped[dict] = mapped_column(JSONB, nullable=False)
     event_count: Mapped[int] = mapped_column(Integer, nullable=False)
-    is_current: Mapped[bool] = mapped_column(
-        String, default=True
-    )
+    is_current: Mapped[bool] = mapped_column(Boolean, default=True)
+    

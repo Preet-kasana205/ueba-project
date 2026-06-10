@@ -4,4 +4,4 @@ from app.api.v1 import ingest, users, baseline
 router = APIRouter()
 router.include_router(ingest.router, prefix="/ingest", tags=["Ingestion"])
 router.include_router(users.router, prefix="/users", tags=["Users"])
-router.include_router(baseline.router, prefix="/baselines", tags=["Baselines"])
+router.include_router(baseline.router, prefix="/baseline", tags=["Baseline"])
