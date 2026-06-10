@@ -1,0 +1,5473 @@
+[
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-11T09:31:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_72.xlsx",
+      "bytes": 440205,
+      "time": "2026-05-11T11:21:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_20.xlsx",
+      "bytes": 263169,
+      "time": "2026-05-11T13:20:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_68.xlsx",
+      "bytes": 272634,
+      "time": "2026-05-11T11:03:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_67.xlsx",
+      "bytes": 230946,
+      "time": "2026-05-11T16:37:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_34.xlsx",
+      "bytes": 41520,
+      "time": "2026-05-11T12:43:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_83.xlsx",
+      "bytes": 495632,
+      "time": "2026-05-11T14:32:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_36.xlsx",
+      "bytes": 27404,
+      "time": "2026-05-11T14:12:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_51.xlsx",
+      "bytes": 127617,
+      "time": "2026-05-11T15:24:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-11T18:10:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-11T08:36:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_59.xlsx",
+      "bytes": 20175,
+      "time": "2026-05-11T15:48:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_6.xlsx",
+      "bytes": 336073,
+      "time": "2026-05-11T12:52:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_85.xlsx",
+      "bytes": 43620,
+      "time": "2026-05-11T15:36:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_10.xlsx",
+      "bytes": 445506,
+      "time": "2026-05-11T15:10:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_14.xlsx",
+      "bytes": 236609,
+      "time": "2026-05-11T15:56:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_50.xlsx",
+      "bytes": 158428,
+      "time": "2026-05-11T15:53:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_41.xlsx",
+      "bytes": 180723,
+      "time": "2026-05-11T13:24:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_95.xlsx",
+      "bytes": 155974,
+      "time": "2026-05-11T13:50:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-11T16:07:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-11T09:51:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_9.xlsx",
+      "bytes": 430691,
+      "time": "2026-05-11T12:54:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_68.xlsx",
+      "bytes": 129560,
+      "time": "2026-05-11T10:34:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-11T17:16:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-12T09:54:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_97.xlsx",
+      "bytes": 359219,
+      "time": "2026-05-12T16:28:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_69.xlsx",
+      "bytes": 342656,
+      "time": "2026-05-12T12:52:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_79.xlsx",
+      "bytes": 290077,
+      "time": "2026-05-12T14:00:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_47.xlsx",
+      "bytes": 487618,
+      "time": "2026-05-12T13:46:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_76.xlsx",
+      "bytes": 47222,
+      "time": "2026-05-12T15:35:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-12T17:51:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-12T09:31:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_25.xlsx",
+      "bytes": 171413,
+      "time": "2026-05-12T10:44:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_36.xlsx",
+      "bytes": 358974,
+      "time": "2026-05-12T13:48:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_37.xlsx",
+      "bytes": 65663,
+      "time": "2026-05-12T09:20:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-12T16:06:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-12T09:24:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_25.xlsx",
+      "bytes": 32710,
+      "time": "2026-05-12T14:50:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_71.xlsx",
+      "bytes": 88719,
+      "time": "2026-05-12T15:44:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-12T17:07:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-13T09:07:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_60.xlsx",
+      "bytes": 287103,
+      "time": "2026-05-13T13:35:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_7.xlsx",
+      "bytes": 221455,
+      "time": "2026-05-13T14:00:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_69.xlsx",
+      "bytes": 202059,
+      "time": "2026-05-13T16:40:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_84.xlsx",
+      "bytes": 497878,
+      "time": "2026-05-13T15:24:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-13T17:53:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-13T09:11:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_42.xlsx",
+      "bytes": 383614,
+      "time": "2026-05-13T10:05:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_36.xlsx",
+      "bytes": 456226,
+      "time": "2026-05-13T11:58:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_86.xlsx",
+      "bytes": 63287,
+      "time": "2026-05-13T09:19:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_37.xlsx",
+      "bytes": 495738,
+      "time": "2026-05-13T14:24:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_91.xlsx",
+      "bytes": 24113,
+      "time": "2026-05-13T10:10:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_75.xlsx",
+      "bytes": 312373,
+      "time": "2026-05-13T09:05:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_31.xlsx",
+      "bytes": 327132,
+      "time": "2026-05-13T13:53:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-13T16:24:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-13T10:45:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_80.xlsx",
+      "bytes": 170963,
+      "time": "2026-05-13T10:31:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_26.xlsx",
+      "bytes": 484233,
+      "time": "2026-05-13T13:32:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_65.xlsx",
+      "bytes": 365015,
+      "time": "2026-05-13T10:30:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_16.xlsx",
+      "bytes": 65527,
+      "time": "2026-05-13T15:40:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_35.xlsx",
+      "bytes": 60012,
+      "time": "2026-05-13T15:00:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_60.xlsx",
+      "bytes": 141904,
+      "time": "2026-05-13T12:05:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_4.xlsx",
+      "bytes": 316784,
+      "time": "2026-05-13T15:47:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-13T16:52:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-14T10:24:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_16.xlsx",
+      "bytes": 241138,
+      "time": "2026-05-14T11:14:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_85.xlsx",
+      "bytes": 145064,
+      "time": "2026-05-14T16:10:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_16.xlsx",
+      "bytes": 497498,
+      "time": "2026-05-14T10:42:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_60.xlsx",
+      "bytes": 309750,
+      "time": "2026-05-14T10:31:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-14T17:00:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-14T08:44:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_73.xlsx",
+      "bytes": 59286,
+      "time": "2026-05-14T12:44:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_14.xlsx",
+      "bytes": 220022,
+      "time": "2026-05-14T15:05:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_96.xlsx",
+      "bytes": 56119,
+      "time": "2026-05-14T12:40:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_10.xlsx",
+      "bytes": 230178,
+      "time": "2026-05-14T15:45:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_69.xlsx",
+      "bytes": 207407,
+      "time": "2026-05-14T13:47:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_65.xlsx",
+      "bytes": 430426,
+      "time": "2026-05-14T15:51:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_91.xlsx",
+      "bytes": 453753,
+      "time": "2026-05-14T12:41:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-14T16:32:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-14T09:17:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_7.xlsx",
+      "bytes": 417244,
+      "time": "2026-05-14T12:13:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_20.xlsx",
+      "bytes": 38811,
+      "time": "2026-05-14T14:15:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_48.xlsx",
+      "bytes": 382821,
+      "time": "2026-05-14T11:53:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_86.xlsx",
+      "bytes": 126229,
+      "time": "2026-05-14T10:42:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_9.xlsx",
+      "bytes": 454493,
+      "time": "2026-05-14T10:18:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_31.xlsx",
+      "bytes": 470259,
+      "time": "2026-05-14T13:15:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-14T17:51:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-15T10:57:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_46.xlsx",
+      "bytes": 306642,
+      "time": "2026-05-15T12:14:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_82.xlsx",
+      "bytes": 291337,
+      "time": "2026-05-15T13:01:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_20.xlsx",
+      "bytes": 478675,
+      "time": "2026-05-15T13:00:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_33.xlsx",
+      "bytes": 49680,
+      "time": "2026-05-15T15:27:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_78.xlsx",
+      "bytes": 403741,
+      "time": "2026-05-15T10:04:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_34.xlsx",
+      "bytes": 477561,
+      "time": "2026-05-15T14:45:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-15T18:55:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-15T08:54:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_33.xlsx",
+      "bytes": 119622,
+      "time": "2026-05-15T09:31:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_75.xlsx",
+      "bytes": 333675,
+      "time": "2026-05-15T11:07:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_90.xlsx",
+      "bytes": 327584,
+      "time": "2026-05-15T13:17:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_54.xlsx",
+      "bytes": 241759,
+      "time": "2026-05-15T15:54:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_21.xlsx",
+      "bytes": 457350,
+      "time": "2026-05-15T14:04:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_26.xlsx",
+      "bytes": 317994,
+      "time": "2026-05-15T09:31:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_80.xlsx",
+      "bytes": 302237,
+      "time": "2026-05-15T15:35:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_44.xlsx",
+      "bytes": 60063,
+      "time": "2026-05-15T10:30:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-15T17:15:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-15T09:22:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_8.xlsx",
+      "bytes": 14566,
+      "time": "2026-05-15T15:53:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_7.xlsx",
+      "bytes": 85118,
+      "time": "2026-05-15T13:58:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_70.xlsx",
+      "bytes": 455504,
+      "time": "2026-05-15T13:03:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-15T17:29:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-18T09:00:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_100.xlsx",
+      "bytes": 445963,
+      "time": "2026-05-18T16:53:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_56.xlsx",
+      "bytes": 499396,
+      "time": "2026-05-18T16:21:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-18T18:06:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-18T09:04:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_71.xlsx",
+      "bytes": 461871,
+      "time": "2026-05-18T11:39:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_60.xlsx",
+      "bytes": 199074,
+      "time": "2026-05-18T15:57:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-18T17:38:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-18T10:08:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_81.xlsx",
+      "bytes": 490323,
+      "time": "2026-05-18T12:35:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_24.xlsx",
+      "bytes": 449206,
+      "time": "2026-05-18T10:20:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-18T17:41:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-19T10:34:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_55.xlsx",
+      "bytes": 68422,
+      "time": "2026-05-19T16:17:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_4.xlsx",
+      "bytes": 470856,
+      "time": "2026-05-19T14:40:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-19T18:20:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-19T08:39:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_72.xlsx",
+      "bytes": 351164,
+      "time": "2026-05-19T14:04:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_14.xlsx",
+      "bytes": 250973,
+      "time": "2026-05-19T10:48:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_4.xlsx",
+      "bytes": 273061,
+      "time": "2026-05-19T11:39:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_39.xlsx",
+      "bytes": 29919,
+      "time": "2026-05-19T10:37:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_73.xlsx",
+      "bytes": 56975,
+      "time": "2026-05-19T14:32:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_83.xlsx",
+      "bytes": 201700,
+      "time": "2026-05-19T15:10:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_88.xlsx",
+      "bytes": 304412,
+      "time": "2026-05-19T11:25:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-19T17:22:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-19T10:11:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_21.xlsx",
+      "bytes": 305478,
+      "time": "2026-05-19T10:30:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_60.xlsx",
+      "bytes": 452362,
+      "time": "2026-05-19T12:09:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_49.xlsx",
+      "bytes": 230582,
+      "time": "2026-05-19T10:40:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_81.xlsx",
+      "bytes": 278704,
+      "time": "2026-05-19T10:36:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_88.xlsx",
+      "bytes": 261378,
+      "time": "2026-05-19T13:15:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_12.xlsx",
+      "bytes": 211034,
+      "time": "2026-05-19T10:37:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_27.xlsx",
+      "bytes": 259475,
+      "time": "2026-05-19T15:01:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-19T17:51:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-20T10:54:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_93.xlsx",
+      "bytes": 167144,
+      "time": "2026-05-20T13:13:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_96.xlsx",
+      "bytes": 392817,
+      "time": "2026-05-20T10:05:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_85.xlsx",
+      "bytes": 220202,
+      "time": "2026-05-20T14:41:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_61.xlsx",
+      "bytes": 81427,
+      "time": "2026-05-20T14:24:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_31.xlsx",
+      "bytes": 432245,
+      "time": "2026-05-20T16:54:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_29.xlsx",
+      "bytes": 398408,
+      "time": "2026-05-20T10:27:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_59.xlsx",
+      "bytes": 136082,
+      "time": "2026-05-20T14:12:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-20T17:47:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-20T09:35:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_71.xlsx",
+      "bytes": 29735,
+      "time": "2026-05-20T12:37:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_80.xlsx",
+      "bytes": 241238,
+      "time": "2026-05-20T12:32:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_100.xlsx",
+      "bytes": 171096,
+      "time": "2026-05-20T11:26:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_95.xlsx",
+      "bytes": 253397,
+      "time": "2026-05-20T14:57:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_52.xlsx",
+      "bytes": 304334,
+      "time": "2026-05-20T15:21:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-20T17:42:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-20T10:28:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_92.xlsx",
+      "bytes": 103139,
+      "time": "2026-05-20T13:01:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_53.xlsx",
+      "bytes": 59879,
+      "time": "2026-05-20T15:19:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-20T17:20:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-21T09:08:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_57.xlsx",
+      "bytes": 281539,
+      "time": "2026-05-21T15:00:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_56.xlsx",
+      "bytes": 126519,
+      "time": "2026-05-21T15:23:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_53.xlsx",
+      "bytes": 147363,
+      "time": "2026-05-21T16:49:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_30.xlsx",
+      "bytes": 430599,
+      "time": "2026-05-21T11:48:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_91.xlsx",
+      "bytes": 41780,
+      "time": "2026-05-21T15:01:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_22.xlsx",
+      "bytes": 448554,
+      "time": "2026-05-21T15:42:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_99.xlsx",
+      "bytes": 121087,
+      "time": "2026-05-21T10:11:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_97.xlsx",
+      "bytes": 469208,
+      "time": "2026-05-21T10:43:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-21T18:42:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-21T09:43:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_3.xlsx",
+      "bytes": 283085,
+      "time": "2026-05-21T11:04:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_18.xlsx",
+      "bytes": 152480,
+      "time": "2026-05-21T14:00:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-21T17:39:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-21T10:23:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_43.xlsx",
+      "bytes": 148476,
+      "time": "2026-05-21T12:02:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_76.xlsx",
+      "bytes": 498315,
+      "time": "2026-05-21T11:08:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_6.xlsx",
+      "bytes": 379660,
+      "time": "2026-05-21T12:16:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_59.xlsx",
+      "bytes": 125280,
+      "time": "2026-05-21T12:29:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_61.xlsx",
+      "bytes": 136091,
+      "time": "2026-05-21T13:59:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-21T17:44:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-22T09:37:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_82.xlsx",
+      "bytes": 224036,
+      "time": "2026-05-22T15:57:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_25.xlsx",
+      "bytes": 34998,
+      "time": "2026-05-22T13:28:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_25.xlsx",
+      "bytes": 247791,
+      "time": "2026-05-22T10:15:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_67.xlsx",
+      "bytes": 361795,
+      "time": "2026-05-22T15:48:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_73.xlsx",
+      "bytes": 49067,
+      "time": "2026-05-22T10:01:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-22T17:04:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-22T08:34:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_62.xlsx",
+      "bytes": 332586,
+      "time": "2026-05-22T13:03:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_76.xlsx",
+      "bytes": 345265,
+      "time": "2026-05-22T12:53:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_40.xlsx",
+      "bytes": 438160,
+      "time": "2026-05-22T12:23:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-22T16:29:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-22T10:13:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_70.xlsx",
+      "bytes": 67960,
+      "time": "2026-05-22T11:03:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_39.xlsx",
+      "bytes": 441086,
+      "time": "2026-05-22T13:12:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_98.xlsx",
+      "bytes": 473776,
+      "time": "2026-05-22T15:09:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_89.xlsx",
+      "bytes": 169182,
+      "time": "2026-05-22T10:48:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_81.xlsx",
+      "bytes": 155534,
+      "time": "2026-05-22T13:59:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_87.xlsx",
+      "bytes": 288110,
+      "time": "2026-05-22T13:27:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_76.xlsx",
+      "bytes": 145616,
+      "time": "2026-05-22T11:58:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_10.xlsx",
+      "bytes": 19184,
+      "time": "2026-05-22T14:57:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-22T17:23:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-25T10:07:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_59.xlsx",
+      "bytes": 408100,
+      "time": "2026-05-25T13:22:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_60.xlsx",
+      "bytes": 408689,
+      "time": "2026-05-25T16:02:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_2.xlsx",
+      "bytes": 155174,
+      "time": "2026-05-25T16:52:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_69.xlsx",
+      "bytes": 478352,
+      "time": "2026-05-25T15:30:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_39.xlsx",
+      "bytes": 59271,
+      "time": "2026-05-25T16:42:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_9.xlsx",
+      "bytes": 31937,
+      "time": "2026-05-25T15:39:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-25T18:59:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-25T08:36:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_5.xlsx",
+      "bytes": 202324,
+      "time": "2026-05-25T14:09:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_56.xlsx",
+      "bytes": 71299,
+      "time": "2026-05-25T12:33:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-25T16:38:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-25T10:53:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_15.xlsx",
+      "bytes": 493881,
+      "time": "2026-05-25T12:55:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_3.xlsx",
+      "bytes": 156195,
+      "time": "2026-05-25T12:32:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_19.xlsx",
+      "bytes": 438319,
+      "time": "2026-05-25T14:30:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_45.xlsx",
+      "bytes": 219962,
+      "time": "2026-05-25T13:57:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_53.xlsx",
+      "bytes": 251389,
+      "time": "2026-05-25T14:09:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_37.xlsx",
+      "bytes": 271372,
+      "time": "2026-05-25T15:59:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_86.xlsx",
+      "bytes": 474796,
+      "time": "2026-05-25T14:07:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_51.xlsx",
+      "bytes": 93375,
+      "time": "2026-05-25T15:50:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-25T16:57:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-26T10:10:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_2.xlsx",
+      "bytes": 253977,
+      "time": "2026-05-26T15:00:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_73.xlsx",
+      "bytes": 441390,
+      "time": "2026-05-26T15:31:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_31.xlsx",
+      "bytes": 75861,
+      "time": "2026-05-26T10:29:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_76.xlsx",
+      "bytes": 311367,
+      "time": "2026-05-26T10:44:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_47.xlsx",
+      "bytes": 126696,
+      "time": "2026-05-26T10:35:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_4.xlsx",
+      "bytes": 234448,
+      "time": "2026-05-26T12:05:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_88.xlsx",
+      "bytes": 308746,
+      "time": "2026-05-26T16:21:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-26T18:28:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-26T08:47:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_37.xlsx",
+      "bytes": 495366,
+      "time": "2026-05-26T12:01:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_95.xlsx",
+      "bytes": 232003,
+      "time": "2026-05-26T15:12:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_78.xlsx",
+      "bytes": 341062,
+      "time": "2026-05-26T15:04:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-26T16:24:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-26T10:45:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_94.xlsx",
+      "bytes": 351056,
+      "time": "2026-05-26T15:48:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_85.xlsx",
+      "bytes": 151026,
+      "time": "2026-05-26T11:32:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_16.xlsx",
+      "bytes": 182983,
+      "time": "2026-05-26T13:45:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_26.xlsx",
+      "bytes": 98905,
+      "time": "2026-05-26T15:15:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-26T17:11:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-27T09:55:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_91.xlsx",
+      "bytes": 449632,
+      "time": "2026-05-27T15:13:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_85.xlsx",
+      "bytes": 159974,
+      "time": "2026-05-27T10:23:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_28.xlsx",
+      "bytes": 263834,
+      "time": "2026-05-27T12:04:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-27T18:08:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-27T09:44:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_12.xlsx",
+      "bytes": 499498,
+      "time": "2026-05-27T12:06:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_100.xlsx",
+      "bytes": 460185,
+      "time": "2026-05-27T10:50:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_6.xlsx",
+      "bytes": 19504,
+      "time": "2026-05-27T12:35:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_74.xlsx",
+      "bytes": 329625,
+      "time": "2026-05-27T09:06:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_73.xlsx",
+      "bytes": 411506,
+      "time": "2026-05-27T12:40:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-27T17:41:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-27T09:00:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_78.xlsx",
+      "bytes": 115219,
+      "time": "2026-05-27T13:03:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_76.xlsx",
+      "bytes": 113126,
+      "time": "2026-05-27T10:28:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_36.xlsx",
+      "bytes": 445665,
+      "time": "2026-05-27T10:18:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_10.xlsx",
+      "bytes": 361386,
+      "time": "2026-05-27T15:40:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_42.xlsx",
+      "bytes": 409240,
+      "time": "2026-05-27T10:31:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_77.xlsx",
+      "bytes": 494615,
+      "time": "2026-05-27T10:07:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_1.xlsx",
+      "bytes": 291047,
+      "time": "2026-05-27T13:44:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-27T16:22:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-28T10:28:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_31.xlsx",
+      "bytes": 199174,
+      "time": "2026-05-28T11:01:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_74.xlsx",
+      "bytes": 250748,
+      "time": "2026-05-28T10:49:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_13.xlsx",
+      "bytes": 473934,
+      "time": "2026-05-28T15:39:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_23.xlsx",
+      "bytes": 393155,
+      "time": "2026-05-28T10:42:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-05-28T17:17:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-28T09:05:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_98.xlsx",
+      "bytes": 39434,
+      "time": "2026-05-28T10:08:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_4.xlsx",
+      "bytes": 490386,
+      "time": "2026-05-28T13:02:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_35.xlsx",
+      "bytes": 443457,
+      "time": "2026-05-28T13:01:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_18.xlsx",
+      "bytes": 356293,
+      "time": "2026-05-28T11:41:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_63.xlsx",
+      "bytes": 239334,
+      "time": "2026-05-28T15:30:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_15.xlsx",
+      "bytes": 272837,
+      "time": "2026-05-28T13:13:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-28T17:14:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-28T09:01:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_97.xlsx",
+      "bytes": 455198,
+      "time": "2026-05-28T15:53:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_79.xlsx",
+      "bytes": 102005,
+      "time": "2026-05-28T13:48:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_6.xlsx",
+      "bytes": 378268,
+      "time": "2026-05-28T14:33:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_19.xlsx",
+      "bytes": 72115,
+      "time": "2026-05-28T15:20:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_3.xlsx",
+      "bytes": 412309,
+      "time": "2026-05-28T15:31:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_66.xlsx",
+      "bytes": 152756,
+      "time": "2026-05-28T14:19:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_24.xlsx",
+      "bytes": 225540,
+      "time": "2026-05-28T12:04:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_4.xlsx",
+      "bytes": 253343,
+      "time": "2026-05-28T10:28:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-28T16:47:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-29T09:52:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_63.xlsx",
+      "bytes": 257156,
+      "time": "2026-05-29T11:42:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_39.xlsx",
+      "bytes": 175479,
+      "time": "2026-05-29T10:18:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-05-29T17:27:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-29T08:12:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_55.xlsx",
+      "bytes": 62312,
+      "time": "2026-05-29T15:19:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_85.xlsx",
+      "bytes": 380944,
+      "time": "2026-05-29T15:55:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_84.xlsx",
+      "bytes": 379292,
+      "time": "2026-05-29T13:51:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_40.xlsx",
+      "bytes": 170368,
+      "time": "2026-05-29T10:11:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_72.xlsx",
+      "bytes": 368771,
+      "time": "2026-05-29T15:56:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_14.xlsx",
+      "bytes": 456177,
+      "time": "2026-05-29T13:06:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_48.xlsx",
+      "bytes": 153013,
+      "time": "2026-05-29T09:02:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_44.xlsx",
+      "bytes": 132765,
+      "time": "2026-05-29T15:12:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-05-29T16:36:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-29T10:40:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_54.xlsx",
+      "bytes": 260603,
+      "time": "2026-05-29T14:42:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_64.xlsx",
+      "bytes": 427790,
+      "time": "2026-05-29T12:09:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_70.xlsx",
+      "bytes": 461210,
+      "time": "2026-05-29T12:40:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-05-29T17:19:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-06-01T09:43:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_33.xlsx",
+      "bytes": 342685,
+      "time": "2026-06-01T11:34:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_13.xlsx",
+      "bytes": 246204,
+      "time": "2026-06-01T14:46:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_95.xlsx",
+      "bytes": 188807,
+      "time": "2026-06-01T14:15:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_80.xlsx",
+      "bytes": 459765,
+      "time": "2026-06-01T10:51:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_11.xlsx",
+      "bytes": 55190,
+      "time": "2026-06-01T15:26:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_43.xlsx",
+      "bytes": 465372,
+      "time": "2026-06-01T14:46:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_73.xlsx",
+      "bytes": 60653,
+      "time": "2026-06-01T16:18:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_47.xlsx",
+      "bytes": 325981,
+      "time": "2026-06-01T16:32:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-06-01T17:42:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-01T09:13:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_6.xlsx",
+      "bytes": 380450,
+      "time": "2026-06-01T10:15:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_7.xlsx",
+      "bytes": 152383,
+      "time": "2026-06-01T13:12:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_12.xlsx",
+      "bytes": 473679,
+      "time": "2026-06-01T09:07:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_2.xlsx",
+      "bytes": 261690,
+      "time": "2026-06-01T15:23:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_87.xlsx",
+      "bytes": 225616,
+      "time": "2026-06-01T10:40:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_10.xlsx",
+      "bytes": 252892,
+      "time": "2026-06-01T15:59:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_89.xlsx",
+      "bytes": 411683,
+      "time": "2026-06-01T13:41:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-01T17:00:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-01T10:35:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_67.xlsx",
+      "bytes": 425169,
+      "time": "2026-06-01T11:21:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_91.xlsx",
+      "bytes": 136457,
+      "time": "2026-06-01T13:06:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_27.xlsx",
+      "bytes": 17901,
+      "time": "2026-06-01T12:51:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_64.xlsx",
+      "bytes": 466318,
+      "time": "2026-06-01T13:48:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_95.xlsx",
+      "bytes": 376286,
+      "time": "2026-06-01T14:53:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-01T16:25:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-06-02T09:49:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_100.xlsx",
+      "bytes": 245414,
+      "time": "2026-06-02T15:12:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_97.xlsx",
+      "bytes": 67744,
+      "time": "2026-06-02T16:43:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_100.xlsx",
+      "bytes": 28017,
+      "time": "2026-06-02T12:20:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_78.xlsx",
+      "bytes": 354636,
+      "time": "2026-06-02T16:40:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-06-02T18:30:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-02T08:21:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_5.xlsx",
+      "bytes": 145336,
+      "time": "2026-06-02T14:08:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_73.xlsx",
+      "bytes": 207433,
+      "time": "2026-06-02T14:35:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_98.xlsx",
+      "bytes": 385246,
+      "time": "2026-06-02T14:28:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_40.xlsx",
+      "bytes": 20956,
+      "time": "2026-06-02T12:58:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-02T17:49:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-02T10:36:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_33.xlsx",
+      "bytes": 446266,
+      "time": "2026-06-02T10:16:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_16.xlsx",
+      "bytes": 383029,
+      "time": "2026-06-02T13:18:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_33.xlsx",
+      "bytes": 136500,
+      "time": "2026-06-02T15:20:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_96.xlsx",
+      "bytes": 279288,
+      "time": "2026-06-02T11:05:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_71.xlsx",
+      "bytes": 57747,
+      "time": "2026-06-02T12:53:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_33.xlsx",
+      "bytes": 367383,
+      "time": "2026-06-02T15:42:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-02T17:16:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-06-03T10:22:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_76.xlsx",
+      "bytes": 134992,
+      "time": "2026-06-03T16:50:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_4.xlsx",
+      "bytes": 403869,
+      "time": "2026-06-03T11:34:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-06-03T17:52:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-03T09:35:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_78.xlsx",
+      "bytes": 258601,
+      "time": "2026-06-03T14:12:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_76.xlsx",
+      "bytes": 478523,
+      "time": "2026-06-03T09:33:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_64.xlsx",
+      "bytes": 88146,
+      "time": "2026-06-03T10:33:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_1.xlsx",
+      "bytes": 440796,
+      "time": "2026-06-03T12:57:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_24.xlsx",
+      "bytes": 152987,
+      "time": "2026-06-03T11:19:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_15.xlsx",
+      "bytes": 133202,
+      "time": "2026-06-03T09:54:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_71.xlsx",
+      "bytes": 132736,
+      "time": "2026-06-03T10:01:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-03T16:08:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-03T09:30:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_55.xlsx",
+      "bytes": 425580,
+      "time": "2026-06-03T15:16:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_32.xlsx",
+      "bytes": 112714,
+      "time": "2026-06-03T12:50:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_31.xlsx",
+      "bytes": 485578,
+      "time": "2026-06-03T15:20:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-03T16:36:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-06-04T10:06:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_76.xlsx",
+      "bytes": 258383,
+      "time": "2026-06-04T11:19:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_72.xlsx",
+      "bytes": 175227,
+      "time": "2026-06-04T10:57:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_39.xlsx",
+      "bytes": 207017,
+      "time": "2026-06-04T13:29:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_44.xlsx",
+      "bytes": 186268,
+      "time": "2026-06-04T12:31:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-06-04T18:46:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-04T09:26:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_76.xlsx",
+      "bytes": 426799,
+      "time": "2026-06-04T14:09:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_15.xlsx",
+      "bytes": 464159,
+      "time": "2026-06-04T09:33:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_97.xlsx",
+      "bytes": 108967,
+      "time": "2026-06-04T13:46:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_17.xlsx",
+      "bytes": 191178,
+      "time": "2026-06-04T12:52:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_87.xlsx",
+      "bytes": 224087,
+      "time": "2026-06-04T11:45:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_95.xlsx",
+      "bytes": 490977,
+      "time": "2026-06-04T14:59:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_16.xlsx",
+      "bytes": 464058,
+      "time": "2026-06-04T15:13:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-04T17:30:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-04T09:37:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_47.xlsx",
+      "bytes": 320690,
+      "time": "2026-06-04T14:03:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_46.xlsx",
+      "bytes": 294373,
+      "time": "2026-06-04T13:50:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_58.xlsx",
+      "bytes": 495930,
+      "time": "2026-06-04T10:29:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_12.xlsx",
+      "bytes": 355302,
+      "time": "2026-06-04T10:08:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_22.xlsx",
+      "bytes": 184130,
+      "time": "2026-06-04T15:20:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_82.xlsx",
+      "bytes": 359607,
+      "time": "2026-06-04T15:23:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-04T17:30:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-06-05T09:52:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_8.xlsx",
+      "bytes": 209511,
+      "time": "2026-06-05T16:56:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_78.xlsx",
+      "bytes": 44311,
+      "time": "2026-06-05T10:34:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_49.xlsx",
+      "bytes": 74262,
+      "time": "2026-06-05T12:14:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_22.xlsx",
+      "bytes": 185093,
+      "time": "2026-06-05T16:55:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-06-05T18:59:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-05T08:12:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_40.xlsx",
+      "bytes": 185491,
+      "time": "2026-06-05T14:37:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_75.xlsx",
+      "bytes": 162968,
+      "time": "2026-06-05T09:40:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_12.xlsx",
+      "bytes": 193523,
+      "time": "2026-06-05T14:10:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_34.xlsx",
+      "bytes": 419039,
+      "time": "2026-06-05T15:55:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-05T16:06:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-05T10:23:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_2.xlsx",
+      "bytes": 210730,
+      "time": "2026-06-05T10:12:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_48.xlsx",
+      "bytes": 368786,
+      "time": "2026-06-05T12:28:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_63.xlsx",
+      "bytes": 82011,
+      "time": "2026-06-05T12:43:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_40.xlsx",
+      "bytes": 203241,
+      "time": "2026-06-05T15:25:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_88.xlsx",
+      "bytes": 476798,
+      "time": "2026-06-05T11:48:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-05T16:59:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-06-08T10:57:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_89.xlsx",
+      "bytes": 214808,
+      "time": "2026-06-08T16:37:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_4.xlsx",
+      "bytes": 454197,
+      "time": "2026-06-08T10:33:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_57.xlsx",
+      "bytes": 272041,
+      "time": "2026-06-08T11:44:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_30.xlsx",
+      "bytes": 398657,
+      "time": "2026-06-08T10:30:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "view",
+      "file_path": "/shared/engineering/doc_97.xlsx",
+      "bytes": 283483,
+      "time": "2026-06-08T13:38:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_9.xlsx",
+      "bytes": 459559,
+      "time": "2026-06-08T10:22:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.101",
+      "timestamp": "2026-06-08T18:23:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-02"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-08T08:56:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_43.xlsx",
+      "bytes": 75369,
+      "time": "2026-06-08T14:57:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_29.xlsx",
+      "bytes": 345299,
+      "time": "2026-06-08T11:03:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "view",
+      "file_path": "/shared/finance/doc_23.xlsx",
+      "bytes": 496210,
+      "time": "2026-06-08T15:21:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-08T16:59:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-08T09:43:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_43.xlsx",
+      "bytes": 486456,
+      "time": "2026-06-08T10:40:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_61.xlsx",
+      "bytes": 311011,
+      "time": "2026-06-08T12:40:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_28.xlsx",
+      "bytes": 467850,
+      "time": "2026-06-08T11:43:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_32.xlsx",
+      "bytes": 158992,
+      "time": "2026-06-08T13:15:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_34.xlsx",
+      "bytes": 201880,
+      "time": "2026-06-08T12:18:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_34.xlsx",
+      "bytes": 265551,
+      "time": "2026-06-08T12:39:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_19.xlsx",
+      "bytes": 275437,
+      "time": "2026-06-08T10:49:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-08T17:38:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-06-09T10:20:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "download",
+      "file_path": "/shared/engineering/doc_80.xlsx",
+      "bytes": 125850,
+      "time": "2026-06-09T16:49:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "preet.kasana",
+      "operation": "upload",
+      "file_path": "/shared/engineering/doc_55.xlsx",
+      "bytes": 211642,
+      "time": "2026-06-09T16:45:00.594967+00:00",
+      "workstation": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "logout",
+      "ip_address": "192.168.1.102",
+      "timestamp": "2026-06-09T17:47:00.594967+00:00",
+      "device_id": "LAPTOP-DEV-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-09T09:27:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_25.xlsx",
+      "bytes": 481293,
+      "time": "2026-06-09T15:12:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_73.xlsx",
+      "bytes": 482735,
+      "time": "2026-06-09T11:24:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_12.xlsx",
+      "bytes": 285488,
+      "time": "2026-06-09T12:36:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/shared/finance/doc_82.xlsx",
+      "bytes": 77251,
+      "time": "2026-06-09T10:37:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_96.xlsx",
+      "bytes": 382352,
+      "time": "2026-06-09T12:35:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_28.xlsx",
+      "bytes": 371834,
+      "time": "2026-06-09T12:52:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_85.xlsx",
+      "bytes": 126473,
+      "time": "2026-06-09T10:51:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "upload",
+      "file_path": "/shared/finance/doc_62.xlsx",
+      "bytes": 455622,
+      "time": "2026-06-09T12:02:00.594967+00:00",
+      "workstation": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "logout",
+      "ip_address": "192.168.1.201",
+      "timestamp": "2026-06-09T17:29:00.594967+00:00",
+      "device_id": "LAPTOP-FIN-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-09T09:49:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "upload",
+      "file_path": "/shared/hr/doc_7.xlsx",
+      "bytes": 417123,
+      "time": "2026-06-09T10:02:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_64.xlsx",
+      "bytes": 99290,
+      "time": "2026-06-09T11:35:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_76.xlsx",
+      "bytes": 328254,
+      "time": "2026-06-09T13:48:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_34.xlsx",
+      "bytes": 265643,
+      "time": "2026-06-09T14:27:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_45.xlsx",
+      "bytes": 132892,
+      "time": "2026-06-09T10:06:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_47.xlsx",
+      "bytes": 177784,
+      "time": "2026-06-09T15:40:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/shared/hr/doc_87.xlsx",
+      "bytes": 192336,
+      "time": "2026-06-09T10:19:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "view",
+      "file_path": "/shared/hr/doc_82.xlsx",
+      "bytes": 436069,
+      "time": "2026-06-09T14:14:00.594967+00:00",
+      "workstation": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "logout",
+      "ip_address": "192.168.1.301",
+      "timestamp": "2026-06-09T17:50:00.594967+00:00",
+      "device_id": "LAPTOP-HR-01"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "203.0.113.99",
+      "timestamp": "2026-06-10T02:13:56.597070+00:00",
+      "device_id": "UNKNOWN-DEVICE-888"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/finance/payroll/ALL_EMPLOYEES_2025.xlsx",
+      "bytes": 52428800,
+      "time": "2026-06-10T02:17:56.597070+00:00",
+      "workstation": "UNKNOWN-DEVICE-888"
+    }
+  }
+]
