@@ -1,7 +1,5 @@
 from pydantic import BaseModel, field_validator
 from typing import Any
-from datetime import datetime
-
 class RawEventIn(BaseModel):
     source_type: str
     source_id: str
@@ -10,7 +8,7 @@ class RawEventIn(BaseModel):
     @field_validator("source_type")
     @classmethod
     def validate_source_type(cls, v):
-        allowed = {"auth", "file_access", "network", "endpoint"}
+        allowed = {"auth", "file_access"}
         if v not in allowed:
             raise ValueError(f"source_type must be one of {allowed}")
         return v
