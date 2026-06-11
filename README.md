@@ -40,15 +40,9 @@ the anomalous John Smith events.
 POST /api/v1/ingest/events/batch
 POST /api/v1/ingest/normalize
 POST /api/v1/baseline/compute
-POST /api/v1/detection/run?lookback_hours=24
-POST /api/v1/alerts/generate?lookback_hours=24
-GET  /api/v1/alerts/
+
 ```
 
 Interactive API documentation is available at `http://localhost:8000/docs`.
 
-## Tests
 
-```powershell
-uv run python -m unittest discover -s codex/tests -v
-```
