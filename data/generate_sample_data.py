@@ -1,6 +1,9 @@
 import json
 import random
 from datetime import datetime, timezone, timedelta
+from pathlib import Path
+
+OUTPUT_DIR = Path("data/sample_logs")
 
 USERS = [
     {"username": "preet.kasana", "department": "Engineering", "normal_hours": (9, 18)},
@@ -126,14 +129,21 @@ def generate_anomalous_events():
     return events
 
 
+def write_events(filename: str, events: list[dict]) -> None:
+    output_path = OUTPUT_DIR / filename
+    output_path.write_text(
+        json.dumps(events, indent=2),
+        encoding="utf-8"
+    )
+
+
 if __name__ == "__main__":
     normal = generate_normal_events(30)
     anomalous = generate_anomalous_events()
-    all_events = normal + anomalous
-
-    with open("data/sample_logs/events.json", "w") as f:
-        json.dump(all_events, f, indent=2)
+    write_events("normal_events.json", normal)
+    write_events("anomalous_events.json", anomalous)
+    write_events("events.json", normal + anomalous)
 
     print(f"Generated {len(normal)} normal events")
     print(f"Generated {len(anomalous)} anomalous events")
-    print(f"Total: {len(all_events)} events saved to data/sample_logs/events.json")
+    print(f"Saved sample files to {OUTPUT_DIR}")

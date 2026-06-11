@@ -1,11 +1,12 @@
 import json
-import sys
 import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from pathlib import Path
 
 import requests
 
-BASE_URL = "http://localhost:8000/api/v1"
+BASE_URL = os.getenv("UEBA_API_URL", "http://localhost:8000/api/v1")
+SAMPLE_DIR = Path("data/sample_logs")
+
 
 def create_users():
     users = [
@@ -17,37 +18,76 @@ def create_users():
          "department": "HR", "role": "hr_manager"},
     ]
     for user in users:
-        r = requests.post(f"{BASE_URL}/users", json=user)
-        if r.status_code == 201:
+        response = requests.post(
+            f"{BASE_URL}/users/",
+            json=user,
+            timeout=30
+        )
+        if response.status_code == 201:
             print(f"Created user: {user['username']}")
+        elif response.status_code == 400:
+            print(f"User already exists: {user['username']}")
         else:
-            print(f"User exists or error: {user['username']} - {r.json()}")
+            response.raise_for_status()
 
 
-def load_events():
-    with open("data/sample_logs/events.json") as f:
-        events = json.load(f)
+def load_events(filename: str):
+    events = json.loads(
+        (SAMPLE_DIR / filename).read_text(encoding="utf-8")
+    )
 
-    # Send in batches of 100
     batch_size = 100
-    total_batches = 0
+    stored = 0
 
     for i in range(0, len(events), batch_size):
         batch = events[i:i + batch_size]
-        r = requests.post(
+        response = requests.post(
             f"{BASE_URL}/ingest/events/batch",
-            json={"events": batch}
+            json={"events": batch},
+            timeout=30
         )
-        result = r.json()
-        total_batches += 1
-        print(f"Batch {total_batches}: {result['received']} stored, "
+        response.raise_for_status()
+        result = response.json()
+        stored += result["received"]
+        print(f"Batch {i // batch_size + 1}: {result['received']} stored, "
               f"{result['duplicate']} duplicate")
 
-    print(f"\nDone. {total_batches} batches sent.")
+    print(f"Loaded {stored} events from {filename}")
+
+
+def run_pipeline_step(path: str) -> dict:
+    response = requests.post(f"{BASE_URL}{path}", timeout=60)
+    response.raise_for_status()
+    return response.json()
 
 
 if __name__ == "__main__":
     print("Creating users...")
     create_users()
-    print("\nLoading events...")
-    load_events()
+
+    print("\nLoading normal history...")
+    load_events("normal_events.json")
+
+    print("\nNormalizing history...")
+    print(run_pipeline_step("/ingest/normalize"))
+
+    print("\nComputing clean baselines...")
+    print(run_pipeline_step("/baseline/compute"))
+
+    print("\nLoading anomalous story events...")
+    load_events("anomalous_events.json")
+
+    print("\nNormalizing anomalous events...")
+    print(run_pipeline_step("/ingest/normalize"))
+
+    print("\nGenerating alerts...")
+    result = run_pipeline_step("/alerts/generate?lookback_hours=24")
+    print(
+        f"Findings: {result['findings_count']}, "
+        f"alerts created: {result['alerts_created']}"
+    )
+    for alert in result["alerts"]:
+        print(
+            f"- [{alert['risk_level'].upper()}] "
+            f"score={alert['risk_score']} {alert['title']}"
+        )
