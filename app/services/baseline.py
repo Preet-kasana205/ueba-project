@@ -5,6 +5,9 @@ from app.models.baseline import Baseline
 from app.models.user import User
 from app.models.device import UserDevice
 
+BASELINE_WINDOW_DAYS = 30
+TRAINING_LAG_HOURS = 24
+
 
 def compute_login_hour_baseline(
     user_id: str,
@@ -59,7 +62,7 @@ def compute_device_baseline(
             existing.last_seen = datetime.now(timezone.utc)
 
     return {
-        "known_devices": list(devices),
+        "known_devices": sorted(devices),
         "device_count": len(devices)
     }
 
@@ -104,11 +107,15 @@ BASELINE_COMPUTERS = {
 
 
 def compute_baselines_for_user(user_id: str, db: Session) -> dict:
-    window_start = datetime.now(timezone.utc) - timedelta(days=30)
+    window_end = datetime.now(timezone.utc) - timedelta(
+        hours=TRAINING_LAG_HOURS
+    )
+    window_start = window_end - timedelta(days=BASELINE_WINDOW_DAYS)
 
     events = db.query(NormalizedEvent).filter(
         NormalizedEvent.user_id == user_id,
-        NormalizedEvent.event_time >= window_start
+        NormalizedEvent.event_time >= window_start,
+        NormalizedEvent.event_time < window_end
     ).all()
 
     if not events:
@@ -134,7 +141,7 @@ def compute_baselines_for_user(user_id: str, db: Session) -> dict:
             baseline_type=baseline_type,
             parameters=parameters,
             event_count=len(events),
-            window_days=30
+            window_days=BASELINE_WINDOW_DAYS
         )
         db.add(baseline)
         computed += 1
