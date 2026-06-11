@@ -1,7 +1,12 @@
+import logging
 from datetime import datetime, timezone
+
 from sqlalchemy.orm import Session
+
 from app.models.event import RawEvent, NormalizedEvent
 from app.models.user import User
+
+logger = logging.getLogger(__name__)
 
 
 def resolve_user_id(username: str, db: Session) -> str | None:
@@ -15,11 +20,12 @@ def resolve_user_id(username: str, db: Session) -> str | None:
 def parse_timestamp(value: str) -> datetime:
     try:
         dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-        return dt
-    except Exception:
-        return datetime.now(timezone.utc)
+    except (AttributeError, TypeError, ValueError) as exc:
+        raise ValueError(f"Invalid ISO-8601 timestamp: {value!r}") from exc
+
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(timezone.utc)
 
 
 def normalize_auth_event(payload: dict) -> dict:
@@ -30,7 +36,7 @@ def normalize_auth_event(payload: dict) -> dict:
         "device_id": payload.get("device_id"),
         "success": payload.get("action", "").endswith("success"),
         "bytes_transferred": None,
-        "metadata": {
+        "event_metadata": {
             "username": payload.get("username"),
             "raw_action": payload.get("action")
         }
@@ -45,7 +51,7 @@ def normalize_file_event(payload: dict) -> dict:
         "device_id": payload.get("workstation"),
         "success": True,
         "bytes_transferred": payload.get("bytes"),
-        "metadata": {
+        "event_metadata": {
             "username": payload.get("user"),
             "file_path": payload.get("file_path"),
             "operation": payload.get("operation")
@@ -107,11 +113,7 @@ def run_normalization(db: Session) -> dict:
                 failed += 1
                 continue
 
-            # Resolve username to user_id
-            username = (
-                normalized_fields.get("metadata", {}).get("username")
-                or normalized_fields.get("metadata", {}).get("user")
-            )
+            username = normalized_fields["event_metadata"].get("username")
             user_id = resolve_user_id(username, db)
 
             normalized = NormalizedEvent(
@@ -122,7 +124,12 @@ def run_normalization(db: Session) -> dict:
             db.add(normalized)
             processed += 1
 
-        except Exception:
+        except (TypeError, ValueError) as exc:
+            logger.warning(
+                "Could not normalize raw event %s: %s",
+                raw_event.id,
+                exc
+            )
             failed += 1
             continue
 
