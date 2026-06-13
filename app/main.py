@@ -45,3 +45,7 @@ def health():
         "status": "ok",
         "environment": settings.ENVIRONMENT
     }
+
+@app.get("/")
+def health_check():
+    return {"status": "ok", "message": "ueba backend is running"}
