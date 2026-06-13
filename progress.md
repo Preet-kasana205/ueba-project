@@ -7,8 +7,7 @@ GitHub: Preet-kasana205/ueba-project
 
 ## Completed
 - Project structure and folder layout
-- Database models: User, RawEvent, NormalizedEvent, 
-  UserDevice, Baseline
+- Database models: User, RawEvent, NormalizedEvent, UserDevice, Baseline
 - Alembic migrations running
 - Log ingestion with SHA-256 checksum + idempotency
 - Normalisation pipeline with dispatch table pattern
@@ -18,21 +17,20 @@ GitHub: Preet-kasana205/ueba-project
 - Baseline computation: login_hours, known_devices, data_volume
 - Sample data generator (30 days normal + anomaly scenario)
 - Sample data loader script
+- Detection rules (new device, unusual login time, data volume spike)
 
 ## Hackathon Context
 - 10 day deadline
 - Need: prototype demo link + workflow diagram
-- Story scenario: john.smith 2am login, unknown device, 
-  50MB download
+- Story scenario: john.smith 2am login, unknown device, 50MB download
 
 ## Next To Build
-1. Detection rules (new device, unusual login time, 
-   data volume spike)
-2. Risk scoring engine
-3. Alert generation
-4. Streamlit dashboard
-5. Workflow diagram
-6. Docker Compose
+
+1. Risk scoring engine
+2. Alert generation
+3. Streamlit dashboard
+4. Workflow diagram
+5. Docker Compose
 
 ## Key Decisions Made
 - Raw events immutable, checksum verified
