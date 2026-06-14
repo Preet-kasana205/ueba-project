@@ -1,0 +1,59 @@
+[
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "john.smith",
+      "action": "login_success",
+      "ip_address": "203.0.113.99",
+      "timestamp": "2026-06-14T02:13:00+00:00",
+      "device_id": "UNKNOWN-DEVICE-888"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "john.smith",
+      "operation": "download",
+      "file_path": "/finance/payroll/ALL_EMPLOYEES_2025.xlsx",
+      "bytes": 52428800,
+      "time": "2026-06-14T02:17:00+00:00",
+      "workstation": "UNKNOWN-DEVICE-888"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "preet.kasana",
+      "action": "login_success",
+      "ip_address": "198.51.100.77",
+      "timestamp": "2026-06-14T03:05:00+00:00",
+      "device_id": "UNKNOWN-DEVICE-999"
+    }
+  },
+  {
+    "source_type": "auth",
+    "source_id": "active-directory-01",
+    "payload": {
+      "username": "sara.jones",
+      "action": "login_success",
+      "ip_address": "203.0.113.55",
+      "timestamp": "2026-06-14T00:05:00+00:00",
+      "device_id": "UNKNOWN-DEVICE-777"
+    }
+  },
+  {
+    "source_type": "file_access",
+    "source_id": "file-server-01",
+    "payload": {
+      "user": "sara.jones",
+      "operation": "download",
+      "file_path": "/hr/employees/ALL_RECORDS_2025.xlsx",
+      "bytes": 41943040,
+      "time": "2026-06-14T00:10:00+00:00",
+      "workstation": "UNKNOWN-DEVICE-777"
+    }
+  }
+]

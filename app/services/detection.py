@@ -22,14 +22,14 @@ def get_user_baselines(user_id: str, db: Session) -> dict:
 
 
 def run_detection(db: Session) -> dict:
-    # Find normalized events not yet checked for anomalies
-    already_checked = db.query(
-        Anomaly.normalized_event_id
+    # Find normalized events not yet checked
+    already_checked_subq = db.query(
+        Anomaly.normalized_event_id,
+        Anomaly.anomaly_type
     ).subquery()
 
     pending = db.query(NormalizedEvent).filter(
-        NormalizedEvent.user_id.isnot(None),
-        ~NormalizedEvent.id.in_(already_checked)
+        NormalizedEvent.user_id.isnot(None)
     ).all()
 
     anomalies_found = 0
@@ -40,17 +40,28 @@ def run_detection(db: Session) -> dict:
         for rule in RULES:
             result = rule.evaluate(event, baselines)
 
-            if result.fired:
-                anomaly = Anomaly(
-                    normalized_event_id=event.id,
-                    user_id=event.user_id,
-                    anomaly_type=result.anomaly_type,
-                    severity=result.severity,
-                    confidence=result.confidence,
-                    explanation=result.explanation
-                )
-                db.add(anomaly)
-                anomalies_found += 1
+            if not result.fired:
+                continue
+
+            # Check if this exact event + rule combo already exists
+            exists = db.query(Anomaly).filter(
+                Anomaly.normalized_event_id == event.id,
+                Anomaly.anomaly_type == result.anomaly_type
+            ).first()
+
+            if exists:
+                continue
+
+            anomaly = Anomaly(
+                normalized_event_id=event.id,
+                user_id=event.user_id,
+                anomaly_type=result.anomaly_type,
+                severity=result.severity,
+                confidence=result.confidence,
+                explanation=result.explanation
+            )
+            db.add(anomaly)
+            anomalies_found += 1
 
     db.commit()
     return {"anomalies_found": anomalies_found}

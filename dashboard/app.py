@@ -21,7 +21,7 @@ st.sidebar.title("Controls")
 if st.sidebar.button("▶ Run Full Pipeline", type="primary"):
     with st.spinner("Running pipeline..."):
         requests.post(f"{BASE_URL}/ingest/normalize")
-        requests.post(f"{BASE_URL}/baselines/compute")
+        requests.post(f"{BASE_URL}/baseline/compute")
         requests.post(f"{BASE_URL}/detection/run")
         requests.post(f"{BASE_URL}/alerts/generate")
     st.sidebar.success("Pipeline complete")
@@ -32,7 +32,7 @@ if st.sidebar.button("Normalize Events"):
     requests.post(f"{BASE_URL}/ingest/normalize")
     st.sidebar.success("Done")
 if st.sidebar.button("Compute Baselines"):
-    requests.post(f"{BASE_URL}/baselines/compute")
+    requests.post(f"{BASE_URL}/baseline/compute")
     st.sidebar.success("Done")
 if st.sidebar.button("Run Detection"):
     requests.post(f"{BASE_URL}/detection/run")

@@ -95,24 +95,23 @@ def generate_normal_events(days=30):
 
 
 def generate_anomalous_events():
-    """The story scenario for the demo"""
     now = datetime.now(timezone.utc)
     events = []
 
-    # john.smith logs in at 2am from unknown device and unknown IP
+    # john.smith — 2am login from unknown device + large download
     events.append({
         "source_type": "auth",
         "source_id": "active-directory-01",
         "payload": {
             "username": "john.smith",
             "action": "login_success",
-            "ip_address": "203.0.113.99",       # never seen before
-            "timestamp": now.replace(hour=2, minute=13).isoformat(),
-            "device_id": "UNKNOWN-DEVICE-888"   # never seen before
+            "ip_address": "203.0.113.99",
+            "timestamp": now.replace(
+                hour=2, minute=13, second=0, microsecond=0
+            ).isoformat(),
+            "device_id": "UNKNOWN-DEVICE-888"
         }
     })
-
-    # Followed by massive data download
     events.append({
         "source_type": "file_access",
         "source_id": "file-server-01",
@@ -120,9 +119,55 @@ def generate_anomalous_events():
             "user": "john.smith",
             "operation": "download",
             "file_path": "/finance/payroll/ALL_EMPLOYEES_2025.xlsx",
-            "bytes": 52428800,                  # 50MB, way above normal
-            "time": now.replace(hour=2, minute=17).isoformat(),
+            "bytes": 52428800,
+            "time": now.replace(
+                hour=2, minute=17, second=0, microsecond=0
+            ).isoformat(),
             "workstation": "UNKNOWN-DEVICE-888"
+        }
+    })
+
+    # preet.kasana — single login at 3am from unknown device
+    events.append({
+        "source_type": "auth",
+        "source_id": "active-directory-01",
+        "payload": {
+            "username": "preet.kasana",
+            "action": "login_success",
+            "ip_address": "198.51.100.77",
+            "timestamp": now.replace(
+                hour=3, minute=5, second=0, microsecond=0
+            ).isoformat(),
+            "device_id": "UNKNOWN-DEVICE-999"
+        }
+    })
+
+    # sara.jones — midnight login + large HR data download
+    events.append({
+        "source_type": "auth",
+        "source_id": "active-directory-01",
+        "payload": {
+            "username": "sara.jones",
+            "action": "login_success",
+            "ip_address": "203.0.113.55",
+            "timestamp": now.replace(
+                hour=0, minute=5, second=0, microsecond=0
+            ).isoformat(),
+            "device_id": "UNKNOWN-DEVICE-777"
+        }
+    })
+    events.append({
+        "source_type": "file_access",
+        "source_id": "file-server-01",
+        "payload": {
+            "user": "sara.jones",
+            "operation": "download",
+            "file_path": "/hr/employees/ALL_RECORDS_2025.xlsx",
+            "bytes": 41943040,
+            "time": now.replace(
+                hour=0, minute=10, second=0, microsecond=0
+            ).isoformat(),
+            "workstation": "UNKNOWN-DEVICE-777"
         }
     })
 
