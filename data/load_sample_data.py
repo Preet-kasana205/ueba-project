@@ -17,7 +17,7 @@ def create_users():
          "department": "HR", "role": "hr_manager"},
     ]
     for user in users:
-        r = requests.post(f"{BASE_URL}/users/", json=user, timeout=30)
+        r = requests.post(f"{BASE_URL}/users", json=user, timeout=30)
         if r.status_code == 201:
             print(f"Created user: {user['username']}")
         elif r.status_code == 400:
