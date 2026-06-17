@@ -1,6 +1,9 @@
 # UEBA Platform
 ### User and Entity Behaviour Analytics for Insider Threat Detection
 
+## Demo
+▶ [Watch Demo Video](https://youtu.be/6vDgRgMQG5o)
+
 A FastAPI-based security platform that continuously monitors user activity,
 builds per-user behavioural baselines, detects statistical anomalies, and
 generates explainable risk-scored alerts with automatic step-up verification
