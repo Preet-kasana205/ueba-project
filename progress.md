@@ -18,19 +18,20 @@ GitHub: Preet-kasana205/ueba-project
 - Sample data generator (30 days normal + anomaly scenario)
 - Sample data loader script
 - Detection rules (new device, unusual login time, data volume spike)
+- Risk scoring engine
+- Alert generation
+- Streamlit dashboard
+- Workflow diagram
 
 ## Hackathon Context
 - 10 day deadline
 - Need: prototype demo link + workflow diagram
 - Story scenario: john.smith 2am login, unknown device, 50MB download
 
-## Next To Build
+## Next To Build(future improvement )
+- deployment
+- Docker Compose
 
-1. Risk scoring engine
-2. Alert generation
-3. Streamlit dashboard
-4. Workflow diagram
-5. Docker Compose
 
 ## Key Decisions Made
 - Raw events immutable, checksum verified
