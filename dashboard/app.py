@@ -93,8 +93,8 @@ if st.sidebar.button("🚀 Run Full Demo", type="primary", width="stretch"):
         progress.progress(60)
 
         # Step 4 - Baselines
-        status.text("Computing behavioural baselines...")
-        requests.post(f"{BASE_URL}/baselines/compute")
+        status.text("Computing behavioural baseline...")
+        requests.post(f"{BASE_URL}/baseline/compute")
         progress.progress(75)
 
         # Step 5 - Detection
@@ -126,7 +126,7 @@ with col1:
         st.sidebar.info(f"Done: {r.json()}")
 with col2:
     if st.button("Baselines", width="stretch"):
-        r = requests.post(f"{BASE_URL}/baselines/compute")
+        r = requests.post(f"{BASE_URL}/baseline/compute")
         st.sidebar.info(f"Done: {r.json()}")
 
 col3, col4 = st.sidebar.columns(2)
