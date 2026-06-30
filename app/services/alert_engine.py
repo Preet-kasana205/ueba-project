@@ -104,46 +104,4 @@ def run_alert_engine(db: Session) -> dict:
     db.commit()
     return {"alerts_created": alerts_created}
 
-    if not unalerted_anomalies:
-        return {"alerts_created": 0}
-
-    # Group by user
-    by_user: dict = {}
-    for anomaly in unalerted_anomalies:
-        by_user.setdefault(anomaly.user_id, []).append(anomaly)
-
-    alerts_created = 0
-
-    for user_id, anomalies in by_user.items():
-        user = db.query(User).filter(User.id == user_id).first()
-        if not user:
-            continue
-
-        risk_score = compute_risk_score(user_id, db)
-
-        alert = Alert(
-            user_id=user_id,
-            title=build_alert_title(anomalies, user.username),
-            description=build_alert_description(anomalies),
-            risk_score=risk_score.score,
-            severity=get_alert_severity(anomalies),
-            status="open",
-            requires_verification=risk_score.score >= VERIFICATION_THRESHOLD,
-            anomaly_ids=[a.id for a in anomalies]
-        )
-        db.add(alert)
-
-        # Update user risk level
-        if risk_score.score >= 80:
-            user.risk_level = "critical"
-        elif risk_score.score >= 60:
-            user.risk_level = "high"
-        elif risk_score.score >= 40:
-            user.risk_level = "medium"
-        else:
-            user.risk_level = "low"
-
-        alerts_created += 1
-
-    db.commit()
-    return {"alerts_created": alerts_created}
+    

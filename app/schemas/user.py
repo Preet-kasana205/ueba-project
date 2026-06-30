@@ -1,6 +1,8 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 from datetime import datetime
 
+
+# --- UEBA user management  ---
 
 class UserCreate(BaseModel):
     external_id: str
@@ -20,3 +22,29 @@ class UserResponse(BaseModel):
     created_at: datetime
 
     model_config = {"from_attributes": True}
+
+
+# --- Auth schemas  ---
+
+class AuthRegister(BaseModel):
+    username: str
+    email: EmailStr
+    password: str
+
+
+class AuthLogin(BaseModel):
+    username: str
+    password: str
+
+
+class UserOut(BaseModel):
+    id: str
+    username: str
+    email: str
+
+    model_config = {"from_attributes": True}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str = "bearer"

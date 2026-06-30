@@ -152,7 +152,6 @@ def load_alerts():
     except:
         return []
 
-
 @st.cache_data(ttl=10)
 def load_users():
     try:
@@ -160,7 +159,6 @@ def load_users():
         return r.json() if r.status_code == 200 else []
     except:
         return []
-
 
 alerts = load_alerts()
 users = load_users()
@@ -235,10 +233,14 @@ if risk_data:
     df_risk = df_risk.sort_values("risk_score", ascending=False)
 
     color_map = {
-        "critical": "#ff4444",
-        "high": "#ff8800",
-        "medium": "#ffcc00",
-        "low": "#44bb44"
+        "critical": "
+#ff4444",
+        "high": "
+#ff8800",
+        "medium": "
+#ffcc00",
+        "low": "
+#44bb44"
     }
 
     fig = px.bar(
@@ -355,10 +357,14 @@ if users:
 
     def color_risk(val):
         colors = {
-            "critical": "background-color: #ff4444; color: white",
-            "high": "background-color: #ff8800; color: white",
-            "medium": "background-color: #ffcc00; color: black",
-            "low": "background-color: #44bb44; color: white"
+            "critical": "background-color: 
+#ff4444; color: white",
+            "high": "background-color: 
+#ff8800; color: white",
+            "medium": "background-color: 
+#ffcc00; color: black",
+            "low": "background-color: 
+#44bb44; color: white"
         }
         return colors.get(val, "")
 

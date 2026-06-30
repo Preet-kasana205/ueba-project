@@ -14,11 +14,14 @@ class User(Base):
         String(255), unique=True, nullable=False
     )
     username: Mapped[str] = mapped_column(String(255), nullable=False)
+    email: Mapped[str] = mapped_column(String(255), unique=True, nullable=False)
+    hashed_password: Mapped[str] = mapped_column(String, nullable=False, default="")
     department: Mapped[str | None] = mapped_column(String(100), nullable=True)
     role: Mapped[str | None] = mapped_column(String(100), nullable=True)
     risk_level: Mapped[str] = mapped_column(
         String(20), nullable=False, default="low"
     )
+    
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True),
